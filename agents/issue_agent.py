@@ -3,6 +3,9 @@ import base64
 import requests
 import json
 from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Initialize the OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
